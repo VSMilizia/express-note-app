@@ -9,13 +9,13 @@ Creare un server che permetta di gestire un app di note con [express-js](https:/
  * Il progetto deve avere un file .env _(ATTENZIONEEE!!!)_
  * Il progetto deve avere un middleware di auth
  * Il progetto deve avere un middleware di log per tracciar e tutte le rotte chiamate (`${method}: ${url} [${time}]`)
- * Il progetto deve prendere i dati delle note dall'api `https://its.dbdevelopment.tech/notes`
+ * Il progetto deve prendere i dati delle note dall'api `http://express-api.plincode.tech/notes`
  * Utilizzare il file `.env.sample` per gestire le variabili del server
 
 ### Init del progetto
-Ogni utente deve richiedere un `APIKEY` al link `https://its.dbdevelopment.tech/key/{user}`
+Ogni utente deve richiedere un `APIKEY` al link `http://express-api.plincode.tech/key/{user}`
 
-Per ottenere la chiave bisogna chiamare in `GET` la url `https://its.dbdevelopment.tech/key/@nomeutenteGitHub` con il vostro utente.
+Per ottenere la chiave bisogna chiamare in `GET` la url `http://express-api.plincode.tech/key/@nomeutenteGitHub` con il vostro utente.
 
 _Salvatevi la chiave da usare nella seconda chiamata_.
 
@@ -27,7 +27,7 @@ la response sara:
     }
 ```
 
-Per ottenere il file delle note bisogna chiamare in `POST` la url `https://its.dbdevelopment.tech/notes`
+Per ottenere il file delle note bisogna chiamare in `POST` la url `http://express-api.plincode.tech/notes`
 con `payload`
 ```json
     {
